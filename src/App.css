@@ -1,0 +1,117 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+button {
+  scale: 1.25;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer; 
+  background-color: #000000;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  color: #d1d1d1;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d1d1d1;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  color: #000000;
+
+}
+button:active {
+  background-color: #000000;
+  color: #d1d1d1;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.content img {
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 40vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+li {
+  cursor: pointer;
+  padding: 2vh;
+  background-color: rgb(233, 72, 72);
+  margin: .5vh;
+  border-radius: 20px;
+  font-size: 1.2em;
+  color: #ffffff;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+span {
+  cursor: pointer;
+  padding: 2vh;
+  background-color: rgb(72, 174, 233);
+  margin: .5vh;
+  border-radius: 20px;
+  font-size: 1.2em;
+  color: #ffffff;
+}
+
+p {
+  padding: 1vh;
+}
