@@ -119,15 +119,19 @@ function App() {
           <p>Country: {movie.Country.split(', ').map((g) => ( <span onClick={() => handleBan(g)}>{g} </span>))}</p>
         </div>
       )}
-      <button onClick={fetchMovie}>Discover</button>
-      <h2>Ban List</h2>
-      <ul>
-        {banList.map((item, index) => (
-          <li key={index} onClick={() => handleUnban(item)}>
-            {item}
-          </li>
-        ))}
-      </ul>
+      <button onClick={fetchMovie} className='discover'>Discover</button>
+      <div className='ban-list'>
+        <h2>Ban List</h2>
+        <ul className='scrollable-list'>
+          {banList.map((item, index) => (
+            <li key={index} onClick={() => handleUnban(item)}>
+              {item}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <br></br>
+      <br></br>
     </div>
   );
 }

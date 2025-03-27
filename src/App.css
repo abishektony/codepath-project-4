@@ -80,6 +80,13 @@ button:active {
   margin-top: 10px;
 }
 
+.discover {
+  position: fixed;
+  top: 90%;
+  transform: translateX(-50%);
+  padding: 2vh;
+  background-color: #000000;
+}
 ul {
   list-style: none;
   padding: 0;
@@ -92,11 +99,22 @@ li {
   cursor: pointer;
   padding: 2vh;
   background-color: rgb(233, 72, 72);
-  margin: .5vh;
+  margin: 1vh;
   border-radius: 20px;
-  font-size: 1.2em;
+  font-size: 2.75vh;
   color: #ffffff;
+  border-width: .35vh;
+  border-style: solid;
+  border-color: #00000000;
+  transition: background-color 0.3s ease;
 }
+
+li:hover {
+  background-color: rgb(72, 174, 233);
+  border-color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -108,10 +126,44 @@ span {
   background-color: rgb(72, 174, 233);
   margin: .5vh;
   border-radius: 20px;
-  font-size: 1.2em;
   color: #ffffff;
+  font-weight: 100;
+  font-size: 2.75vh;
+  transition: background-color 0.3s ease;
+  border-style: solid;
+  border-color: #00000000;
+}
+
+span:hover {
+  background-color: rgb(233, 72, 72);
+  border-color: #ffffff;
+  transition: background-color 0.3s ease;
 }
 
 p {
   padding: 1vh;
+  font-size: 3vh;
+  font-weight: bold;
+}
+
+.ban-list{
+  position: fixed;
+  top: 50%;
+  max-height: 50vh;
+  transform: translateY(-40%);
+  width: 30vh;
+  height: auto;
+  left: 75%;
+  padding: 2vh;
+  border-radius: 20px;
+  background-color: #000000;
+}
+
+.scrollable-list {
+  max-height: 37vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  padding: 2vh;
+  border-radius: 20px;
+  background-color: #000000;
 }
